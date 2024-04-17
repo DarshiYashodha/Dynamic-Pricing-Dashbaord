@@ -15,7 +15,7 @@ st.set_page_config(page_title="Dynamic Pricing", page_icon=":chart_with_upwards_
 st.title(":chart_with_upwards_trend: Dynamic Pricing")
 st.markdown("<style>div.block-container{padding-top:1rem}</style>",unsafe_allow_html=True)
 
-os.chdir(r"D:/projects/Streamlit/Final project")
+#os.chdir(r"D:/projects/Streamlit/Final project")
 df = pd.read_csv("dynamic.csv") 
 
 average_values = df[["Expected_Ride_Duration","adjusted_ride_cost","profit_percentage","Number_of_Riders","Number_of_Drivers"]].mean()
